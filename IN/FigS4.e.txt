@@ -1,0 +1,44 @@
+% data
+gene	VPC_earlyL3	VPCd_midL3	VPCdE_lateL3	VPCdF_lateL3	VPCdE_earlyL4	VPCdF_earlyL4	VPCdE_midL4	VPCdF_midL4	VPCdE_lateL4	VPCdF_lateL4	VPCdE_adult	VPCdF_adult
+lin-39	1	1	1	1	1	1	0	0	0	0	0	0
+cog-1	0	0	1	1	1	1	1	1	1	1	1	1
+egl-38	0	0	0	0	0	0	0	1	0	1	0	1
+lin-11	0	1	1	1	0	0	0	0	0	0	0	0
+lin-29	0	1	1	1	1	1	1	1	1	1	1	1
+nhr-67	0	0	0	0	0	0	0	0	0	0	0	0
+zmp-1	0	0	0	0	0	0	0	0	1	0	1	0
+ceh-2	0	0	0	0	0	0	0	0	0	0	0	0
+egl-26	0	0	0	0	0	0	1	0	1	0	1	0
+dhs-31	0	0	0	0	0	0	0	0	0	0	0	0
+cdh-3	0	0	0	0	1	1	1	1	1	1	1	1
+egl-17	0	0	1	1	0	0	0	0	0	0	0	0
+unc-53	0	0	0	0	0	0	0	0	0	0	0	0
+pepm-1	0	0	0	0	0	0	0	0	1	1	1	1
+pax-2	0	0	0	0	0	0	0	0	0	0	0	0
+lin-3	0	0	0	0	0	0	0	1	0	1	0	1
+syg-2	0	0	0	0	1	1	1	1	1	1	1	1
+sqv-4	0	0	0	0	0	0	1	1	1	1	1	1
+bam-2	0	0	0	0	0	0	0	0	0	1	0	1
+F47B8.6	0	0	0	0	0	0	0	0	1	1	1	1
+B0034.1	0	0	0	0	0	0	0	0	1	1	1	1
+C55C3.5	0	0	0	0	0	0	0	0	0	1	0	1
+T04B2.6	0	0	0	0	0	0	0	0	0	0	0	0
+
+% topology
+from	to	trigger	matrix
+VPC_earlyL3	VPCd_midL3	0	0
+VPCd_midL3	VPCdE_lateL3	F-1	0
+VPCd_midL3	VPCdF_lateL3	F+1	0
+VPCdE_lateL3	VPCdE_earlyL4	0	0
+VPCdF_lateL3	VPCdF_earlyL4	0	0
+VPCdE_earlyL4	VPCdE_midL4	0	0
+VPCdF_earlyL4	VPCdF_midL4	0	0
+VPCdE_midL4	VPCdE_lateL4	0	0
+VPCdF_midL4	VPCdF_lateL4	0	0
+VPCdE_lateL4	VPCdE_adult	0	0
+VPCdF_lateL4	VPCdF_adult	0	0
+
+% settings
+ActionSet VPC_earlyL3
+ActionSwitch 1 @ VPCd_midL3 15
+ActionRun 150

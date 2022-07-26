@@ -1,0 +1,59 @@
+% data
+genes	P5_VPC_earlyL3	P5_VPCd_dist_midL3	P5_VPCd_prox_midL3	P5_VPCd_A_lateL3	P5_VPCd_B_lateL3	P5_VPCd_C_lateL3	P5_VPCd_D_lateL3	P5_VPCd_A_earlyL4	P5_VPCd_B1_earlyL4	P5_VPCd_B2_earlyL4	P5_VPCd_C_earlyL4	P5_VPCd_D_earlyL4	P5_VPCd_A_midL4	P5_VPCd_B1_midL4	P5_VPCd_B2_midL4	P5_VPCd_C_midL4	P5_VPCd_D_midL4	P5_VPCd_A_lateL4	P5_VPCd_B1_lateL4	P5_VPCd_B2_lateL4	P5_VPCd_C_lateL4	P5_VPCd_D_lateL4	P5_VPCd_A_adult	P5_VPCd_B1_adult	P5_VPCd_B2_adult	P5_VPCd_C_adult	P5_VPCd_D_adult
+lin-39	1	1	1	1	1	1	1	1	1	1	1	1	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0
+cog-1	0	0	0	0	0	0	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+egl-38	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+lin-11	0	0	1	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+lin-29	0	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1	1
+nhr-67	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0
+zmp-1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	1
+ceh-2	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	1	0	0	1	1	1	0	0	1	1	1	0
+egl-26	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	1	0	1	1	0	1	0	1	1	0	1
+dhs-31	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	1
+cdh-3	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	1	1	0	0	0	1	1	0	0	0	1	1
+egl-17	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	1	1	0	0	0	1	1
+unc-53	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	1	1	0	0	0	1	1
+pepm-1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	1	1
+pax-2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	1	0	0	0	0	1
+lin-3	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+syg-2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+sqv-4	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	1	1	0	0	0	1	1
+bam-2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+F47B8.6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	0	0	1	1
+B0034.1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+C55C3.5	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+T04B2.6	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	1	0	1
+
+% topology
+from	to	trigger	matrix
+P5_VPC_earlyL3	P5_VPCd_dist_midL3	F-1	0
+P5_VPC_earlyL3	P5_VPCd_prox_midL3	F+1	0
+P5_VPCd_dist_midL3	P5_VPCd_A_lateL3	F-2	0
+P5_VPCd_dist_midL3	P5_VPCd_B_lateL3	F+2	0
+P5_VPCd_prox_midL3	P5_VPCd_C_lateL3	F+3	0
+P5_VPCd_prox_midL3	P5_VPCd_D_lateL3	F-3	0
+P5_VPCd_A_lateL3	P5_VPCd_A_earlyL4	0	0
+P5_VPCd_B_lateL3	P5_VPCd_B1_earlyL4	F-4	0
+P5_VPCd_B_lateL3	P5_VPCd_B2_earlyL4	F+4	0
+P5_VPCd_C_lateL3	P5_VPCd_C_earlyL4	0	0
+P5_VPCd_D_lateL3	P5_VPCd_D_earlyL4	0	0
+P5_VPCd_A_earlyL4	P5_VPCd_A_midL4	0	0
+P5_VPCd_B1_earlyL4	P5_VPCd_B1_midL4	0	0
+P5_VPCd_B2_earlyL4	P5_VPCd_B2_midL4	0	0
+P5_VPCd_C_earlyL4	P5_VPCd_C_midL4	0	0
+P5_VPCd_D_earlyL4	P5_VPCd_D_midL4	0	0
+P5_VPCd_A_midL4	P5_VPCd_A_lateL4	0	0
+P5_VPCd_B1_midL4	P5_VPCd_B1_lateL4	0	0
+P5_VPCd_B2_midL4	P5_VPCd_B2_lateL4	0	0
+P5_VPCd_C_midL4	P5_VPCd_C_lateL4	0	0
+P5_VPCd_D_midL4	P5_VPCd_D_lateL4	0	0
+P5_VPCd_A_lateL4	P5_VPCd_A_adult	0	0
+P5_VPCd_B1_lateL4	P5_VPCd_B1_adult	0	0
+P5_VPCd_B2_lateL4	P5_VPCd_B2_adult	0	0
+P5_VPCd_C_lateL4	P5_VPCd_C_adult	0	0
+P5_VPCd_D_lateL4	P5_VPCd_D_adult	0	0
+
+% settings
+ActionSet P5_VPC_earlyL3
+ActionSwitch 1
+ActionRun 150

@@ -1,0 +1,46 @@
+Human hematopoesis
+
+from mesoderm cell to colony-forming unit erythroid
+
+% data
+gene	Mesoderm	Primitive_hemangioblast	Definitive_hemangioblast	Definitive_EC	LTR-HSC	STR-HSC	CLP	CMP	GMP	MEP	BFU-meg	BFU-E	CFU-E
+GATA-1	0	1	0	0	0	1	0	1	0	1	1	1	1
+GATA-2	0	0	1	1	1	1	0	1	0	1	0	1	0
+PU.1	0	0	0	0	0	1	1	1	1	1	0	0	0
+SCL	0	1	1	1	1	1	0	1	1	1	1	1	1
+Bra	1	1	1	0	0	0	0	0	0	0	0	0	0
+Flk-1	0	1	0	1	0	0	0	0	0	0	0	0	0
+BMP4	1	1	1	0	0	0	0	0	0	0	0	0	0
+Runx1	0	0	1	0	1	1	1	1	1	1	1	1	1
+VE-cadherin	0	0	0	1	0	0	0	0	0	0	0	0	0
+c-myb	0	0	0	0	1	1	1	1	1	1	0	1	1
+NF+E2	0	0	0	0	0	0	0	1	0	1	1	1	1
+c-kit	0	0	0	0	0	1	0	1	0	1	0	1	1
+EKLF	0	0	0	0	0	0	0	1	0	1	0	1	1
+EpoR	0	0	0	0	0	0	0	0	0	1	0	0	0
+Fli-1	0	0	0	0	0	0	0	0	1	0	1	1	1
+
+% topology
+from	to	trigger
+Mesoderm	Definitive_hemangioblast	F+1
+Mesoderm	Primitive_hemangioblast	F-
+Definitive_hemangioblast	LTR-HSC	F+2
+Definitive_hemangioblast	Definitive_EC	F-
+LTR-HSC	STR-HSC	C3
+STR-HSC	CLP	F-
+STR-HSC	CMP	F+4
+CMP	GMP	F-
+CMP	MEP	F+5
+MEP	BFU-meg	F-
+MEP	BFU-E	F+6
+BFU-E	CFU-E	0
+
+% settings
+ActionSet Mesoderm
+ActionSwitch 1
+ActionSwitch 2 @ Definitive_hemangioblast 15
+ActionSwitch 3 @ LTR-HSC 15
+ActionSwitch 4 @ STR-HSC 15
+ActionSwitch 5 @ CMP 15
+ActionSwitch 6 @ MEP 15
+ActionRun 150
